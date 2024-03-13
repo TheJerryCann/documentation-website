@@ -4,87 +4,151 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Documentation Website</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <header>
-      <h1>Project Documentation</h1>
+
+  <body class="font-sans antialiased bg-gray-100">
+    <header class="text-black py-4">
+      <div class="container mx-auto">
+        <h1 class="text-3xl font-bold text-center">Project Documentation</h1>
+      </div>
     </header>
 
-    <nav>
-      <ul>
-        <li><a href="#team">Team</a></li>
-        <li><a href="#proposal">Proposal</a></li>
-        <li><a href="#prototype">Prototype</a></li>
-        <li><a href="#technical">Technical Design</a></li>
-        <li><a href="#database">Database</a></li>
-        <li><a href="#screenshots">Screenshots</a></li>
-        <li><a href="#presentation">Presentation</a></li>
-        <li><a href="#source">Source Code</a></li>
-      </ul>
+    <nav class="text-blue-800">
+      <div class="container mx-auto">
+        <ul class="flex justify-center space-x-6 py-4">
+          <li><a href="#team">Team</a></li>
+          <li><a href="#proposal">Proposal</a></li>
+          <li><a href="#prototype">Prototype</a></li>
+          <li><a href="#technical">Technical Design</a></li>
+          <li><a href="#database">Database</a></li>
+          <li><a href="#screenshots">Screenshots</a></li>
+          <li><a href="#presentation">Presentation</a></li>
+          <li><a href="#source">Source Code</a></li>
+        </ul>
+      </div>
     </nav>
 
-    <main>
-      <section id="team">
-        <h2>Team</h2>
+    <main class="container mx-auto mt-8">
+      <section id="team" class="mb-8">
+        <h2 class="text-2xl font-bold">Team</h2>
 
-        <h3 style="margin-left: 5px">Group Members and Responsibilities</h3>
-        <p style="margin-left: 10px">
-          <b>Alex: </b>Responsible for managing CRUD operations for lists and
-          tasks, developing user profile settings, about, contact, home, today,
-          and upcoming pages, as well as designing the list view for tasks.
+        <div class="ml-4">
+          <h3 class="font-bold mb-4 mt-2 text-blue-800">
+            Group Members and Responsibilities
+          </h3>
+          <p class="mb-4">
+            <b>Alex: </b>Responsible for managing CRUD operations for lists and
+            tasks, developing user profile settings, about, contact, home,
+            today, and upcoming pages, as well as designing the list view for
+            tasks.
+          </p>
+          <p class="mb-4">
+            <b>Gabe: </b>Developed task functionalities including search and
+            sharing capabilities. Implemented modal views for tasks and lists.
+          </p>
+          <p>
+            <b>Emma: </b>Implemented CRUD operations for user management.
+            Designed and developed login and registration pages. Additionally,
+            established an admin login system with corresponding administrative
+            functionalities.
+          </p>
+        </div>
+      </section>
+
+      <section id="proposal" class="mb-8">
+        <h2 class="text-2xl font-bold">Proposal</h2>
+        <p class="mb-4">
+          A detailed document outlining the project's objectives, scope, and
+          approach.
         </p>
-        <p style="margin-left: 10px">
-          <b>Gabe: </b>Developed task functionalities including search and
-          sharing capabilities. Implemented modal views for tasks and lists.
+        <a
+          href="proposal.html"
+          class="inline-block px-2 py-1 bg-blue-600 text-white rounded hover:bg-blue-700"
+          >View</a
+        >
+      </section>
+
+      <section id="prototype" class="mb-8">
+        <h2 class="text-2xl font-bold">Prototype</h2>
+        <p class="mb-4">
+          A visual representation of the project's design and functionality.
         </p>
-        <p style="margin-left: 10px">
-          <b>Emma: </b>Implemented CRUD operations for user management. Designed
-          and developed login and registration pages. Additionally, established
-          an admin login system with corresponding administrative
-          functionalities.
+        <a
+          href="prototype.html"
+          class="inline-block px-2 py-1 bg-blue-600 text-white rounded hover:bg-blue-700"
+          >View</a
+        >
+      </section>
+
+      <section id="technical" class="mb-8">
+        <h2 class="text-2xl font-bold">Technical Design</h2>
+        <p class="mb-4">
+          An in-depth document detailing the technical architecture and
+          implementation of the project.
         </p>
-        <!-- Add introduction of each team member and their responsibilities -->
+        <a
+          href="techDesign.html"
+          class="inline-block px-2 py-1 bg-blue-600 text-white rounded hover:bg-blue-700"
+          >View</a
+        >
       </section>
 
-      <section id="proposal">
-        <h2>Proposal</h2>
-        <a href="proposal.html">Proposal Link</a>
+      <section id="database" class="mb-8">
+        <h2 class="text-2xl font-bold">Database</h2>
+        <p class="mb-4">
+          A diagram illustrating the structure and relationships of the
+          project's database tables.
+        </p>
+        <a
+          href="erd.html"
+          class="inline-block px-2 py-1 bg-blue-600 text-white rounded hover:bg-blue-700"
+          >View</a
+        >
       </section>
 
-      <section id="prototype">
-        <h2>Prototype</h2>
-        <a href="prototype.html">Prototype Link</a>
-      </section>
-
-      <section id="technical">
-        <h2>Technical Design</h2>
-        <a href="techDesign.html">Technical Design Link</a>
-      </section>
-
-      <section id="database">
-        <h2>Database</h2>
-        <a href="erd.html">ERD Link</a>
-      </section>
-
-      <section id="screenshots">
-        <h2>Screenshots</h2>
+      <section id="screenshots" class="mb-8">
+        <h2 class="text-2xl font-bold">Screenshots</h2>
+        <p class="mb-4">
+          Visual representations of different aspects of the application's user
+          interface.
+        </p>
         <a href="pdfs/CapstoneScreenshots.zip">Screenshots Zip</a>
-      </section>
 
-      <section id="presentation">
-        <h2>Presentation</h2>
+
+      <section id="presentation" class="mb-8">
+        <h2 class="text-2xl font-bold">Presentation</h2>
+        <p class="mb-4">
+          A slide deck used to present the project's key concepts, progress, and
+          outcomes.
+        </p>
         <!-- Add link to copy of the PowerPoint presentation -->
       </section>
 
-      <section id="source">
-        <h2>Source Code</h2>
-        <!-- Add link to GitHub repository and zipped file of source code -->
+      <section id="source" class="mb-8">
+        <h2 class="text-2xl font-bold">Source Code</h2>
+        <p class="mb-4">
+          A collection of all the project's source code files, organized and
+          zipped for distribution.
+        </p>
+        <a
+          href="https://github.com/gacarrillo-dev/Capstone/archive/refs/heads/main.zip"
+          class="inline-block px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700"
+          >Download</a>
       </section>
     </main>
 
-    <footer>
-      <p>&copy; 2024 Project Documentation</p>
+    <footer class="py-4 mt-8">
+      <div class="container mx-auto text-center">
+        <p>&copy; 2024 Project Documentation</p>
+      </div>
     </footer>
   </body>
 </html>
-</head>
